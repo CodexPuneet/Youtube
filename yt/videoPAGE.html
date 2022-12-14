@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>i did it</title>
+</head>
+<style> 
+ #nav{
+        position: sticky;
+        display: flex;
+        width: 100%;
+        height: 50px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        margin: -4px;
+        
+    }
+    #yt{
+        width: 160px;
+        height: 30px;
+        margin: 10px 0px 0px 10px;
+    }
+    #query
+    {
+        height: 36px;
+        padding: 0px 300px 0px 10px;
+        text-align: left;
+        margin: 7px 0px 5px 200px;
+        background-color: rgb(201, 194, 194);
+        border: 0px;
+        border-radius: 2px;
+    }
+    #nav>button{
+        width: 70px;
+        height: 36px;
+        background-color: rgb(131, 127, 127);
+        border: 0px;
+        margin-top: 7px;
+    }
+    #nav>button>img{
+        height: 100%;
+        width: 90%;
+    }
+    #dot{
+        margin: 10px 0px 0px 10px;
+        height: 30px;
+        width: 35px;
+    }
+    #mic{
+        border-radius: 10px;
+        width: 18px;
+        height: 24px;
+        margin: 12px 0px 0px 14px
+    }
+    #noti{
+        width: 25px;
+        height: 24px;
+        margin: 12px 0px 0px 440px;
+        color: gray;
+    }
+    #user{
+        width: 36px;
+        height: 33px;
+            border-radius: 50px;
+            margin: 7px 10px;
+    }
+    #box {
+    display: grid;
+    grid-template-columns: 69% 29%;
+    margin-top: 20px;
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    gap: 2%;
+    box-sizing: border-box;
+}
+
+.container>iframe {
+    width: 100%;
+    height: 500px;
+}
+.main>div>h2{
+    width: 100%;
+    margin-top: 10px;
+}
+.main>div>img{
+   margin-left: 180px ;
+   margin-top: -5px;
+}
+
+.side>div {
+    display: grid;
+    grid-template-columns: 39% 59%;
+    color: white;
+    gap: 2%;
+    background-color: rgb(49, 49, 49);
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.side img {
+    width: 100%;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+</style>
+<body>
+    <div id="nav">
+        <img id="dot" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAS1BMVEX///8AAAB/f3+Dg4NFRUWSkpIzMzMHBwehoaGbm5vBwcH29vbExMRZWVm4uLjt7e2pqak/Pz/MzMwfHx+Li4sbGxsiIiKkpKQ1NTU0rZswAAABeklEQVR4nO3aWW4CMRAFQAgQtrATkvufNLEAieXTVtp0qm7wpOkZT/sNBgAAAAAAAAD/2WY9Gb39sdFkvWkcY7sbBtltG8bYv0fFKN73rXLMppE5hsPprE2OeWyMYt4ixyI6RbGoz7E8RIcoDsvqIMfoDGfH6iCf0RHODrU5upiQ4qMyyCg6wNWoMsgqOsDVqjLIODrA1ViQszSPVpphT/P6TfNBzHNEWZ6iMxSn+kNjF1MyrZ6QIsuPVQe/ul9tckQvH76bLR9+bcOOKuOW66AiyYIOAAAAAF5TkgWdBl0DGnSPslz09HD1pkF3I831dJbCQBcTUmjQXaSpOaUpnqUJkubRSjPsaV6/aT6IeY4oGnQtadDdC//V1aB7pkHX24IOAAAAAF5TkgWdBl0DGnSPslz09HD1pkF3I831dJbCQBcTUmjQXaSpOaUpnqUJkubRSjPsaV6/aT6IeY4oGnQtadDdC//V1aB7pkHX24IOAAAAAAAA4LX8AMFMNSwFTzF0AAAAAElFTkSuQmCC" alt="">
+        <img id="yt" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAdsAAABqCAMAAADDRQtiAAAAw1BMVEX/////AAAoKCgAAADr6+sJCQklJSUfHx/j4+MiIiLMzMz6+vr39/cVFRVsbGwyMjJxcXFCQkJRUVGioqIZGRlISEiRkZE6OjoQEBDS0tKtra2AgIDY2Ni9vb3q6ur/5+dfX1//kZH/w8P/8PD/0ND/2dn/m5v/pqb/s7NMTEyjo6P/mJj/urr/4OD/XFyNjY3/yMj/cHD/IyP/fn7/ZGT/9PT/RET/MzP/dnb/ExP/Ozv/6ur/r6+/v7//UVFaWlr/iIip8nrwAAAPhElEQVR4nO2d/UOiTBDHedwASclUKtJe7E17M6u7rrurrv7/v+oRFHZmmQV0F8Hq+9NdvAjzAXZ3ZnbWMBbW08vxeHxxfn9/ejvV5etoNBze3NycRJr+ezgcjUavl9PNp6f35xfj8fjl7GnxX/pWoXoan99fjoYfvx/ufj0//vlPUY/Pf/89/P64GV3en4+/aZei4/vXk4d/j6ooM/V892N4e/ENeUV6uv3xt3Cmgv78HB2Xfd+fX6f/Vs010t/Lsu+9HDV7UNeF/c598V/hFP05LezGKqw6c4FYo6CfeSiTbKCfBd1YlVVnNaCC2L4o94LV9edFcnFNJMoAeI+mdvM0F9Ai510F2+Oyuc4k6VPtMSiTMhFSV7t92AJa5LwrYHtWNtRI9ICo6yILbCR26Ploh7p2A9WsWl4Rj55cK2Bbai8K6pm8vANkAf8tsUPfBtstS7+B1pftj7KRcp2QF2hD03q7ie0tuN3u67fQ2rIdlw0UiuxPbcP30umIm5tZ77Wy1pZtaR4LSuRI6NBPtd6miSykv5u8tmwr9drSL+4GNsGBsHnXA1udK90GMtaX7UfZNLFuqGtsQ9u6PWHruwO36h8BrS/bsmEKeqSuEb2Z9rawFY+AxLdah9aU7UvZMEVRY9x92KJarTQD+ZrtE2pN2d6XzVIUGTTANsC9JeS5SLzUWuQgCaAttLFKfqlR2SxFkUPcARwFmZtoG/Jc+Iea7RNqBwvBtdpo294i5y2YbYUcFzP9o66yB92OLvZeIM8F4ZHULjyeNveXP1PBbCs1ug2VaQTnHW5Clnbams1DCQ/JhK/IQiqYbQWCe4JI1xTqzaA2DXkuCIekfq0L20bZJJO6p66zD0dBKNKzCz/XTOEDmVvrwrZiXqlAI+o63+DbiTpMyHOx0AhkWa0L28oNgf777wd1nQ1oBQ+GetAIaEuvdWitC9vXskkm9Yu80A54PWGPCZnHF92RhWhd2J6UTZIQeaEo+QJYAcWI2JFe69BaF7alpzcSIi8UJV+ALhPsZFkLOQ6W1rqw/VU2SEJ0SpwHRkEgFNQG32pvotc4Eq0LW4VUqZ/6aGKdk1cKky+41xj1sVTMvIBWwnZjQznHQAFBYTMRbskrhQ2rVYv+iiJEpvjgbxxOBntukPhau+pf64r+Fc52f9IO02F3JqmXvN/d3nGC/by9weQw0dV4UkBgFBVoGGZbNA4FXYMulj1ABzR6O8z35nl0lmO7zJ4kvc377Q7QDuhoow1XYNglZbshPWQAN3RinynJdrPNvFlD43isI0vIPej7zLXnMSnL9nzWFgYJKknnof1+ayPK9UHfzZ5FGBR+qXFCRpf50KsRmsBjiRZ5k8EInQmyNtAGD4yc5WzRIS4IN7ZtsMGOA9AE28YWg5ftMHJYtzFgMPo129V3URDsXAHB7Axj/b2xB5otTL6IM2csABy6IustX7z32YEt4UXAiXQwIwfZ3c7HFh0C2UJ3uJXC9qgGnavhX4mo5WGSbHhiBqPXpwoI4nPoDjfc0WwhhcjU0Jow6fyNie9sJEdIuqkW2yMzed3JQXuXJXaayx/wvVTcUvwsN9qwhvpLs4XGtuwkGeCJ3JTefPBwoze3UmwbDvFI2iikOdV1yt353AgqVMCvPWkdD/2RsIXJF/MYPPRWmXHS+QZLy29yUL5Vldji9BL+d/ylOUhBO905vhyVBFb0gxc6aylI2PaSIBHueAS0Q5oolgtDDRVi6x7S1IQISHpiHh8eqrgcBctfakMrYwstMc+rATOFeDaGxERc8KtcIbby64VujK7QSbQE1GbU97rTSUBbFrusdg14Ymdj2SNI+5rYLdzAmIlfZAiqamxt3/TFzw6KV/voVKa512Koax0HyVSypZK2f1F5VHKwBXEBywn+ACP28cuIwvhT23frGwd9bETQ9awYW7Z1ePC2LfwZTk1EGbtWLWiamru42Z4b4lkr2+l4WYsb8kzC9g3cV9iZAkPeqOcs5LtGHZEebtk4wkqxteY9IaFVgdn2O7AnHWV1oryi6B5UCND21+GGlNWbgimNoUkBxvjZxhmmcb7rFpp/zYOBlWIb94gn2IPBG1zYCoHMPxgkiyax6mdrNNQznseSUxtX/KENKYDHNW6T8ITO2Cp45MA/ylVia8b+xaawIY5Xo08y7xOi/HtWGFvDOFbNeb6QnRkMZwNjw4c4hogmYoPwAUpR572TCrF1dvgBHeTE4LlC6O7ceHecfRK+/UoZrFK2ym5IKVvw8gXtK2h/+bRbVEABsEKPNvdhVYgt7A6jmYvg4wvHACAHH32VZudRCfGlsTWMocqZ6eB8IJff2vRFBV2IGIrU8GjaCc+mqxBbOIx988lToW816D6jX57dhFLxoVS2xpOCW0TOFnySpm0Q6ErFvRChQAL3UggbqsgWpBYIX+voDd2XTKIgmBfIVsUNKWcL2hW3Bz6/lhft0cPFqPirIOlMVZQt7kzFR6CuFLjYBryLWSdDaWJ1KthQt9rZAuvZfXD/3I549OCSh9ZAz7OibHExgFr06KJmmHvi8O6zEZ5Srb8UqLFONLMFyRdO54Bj4d2QLVkdsSbdb6kqW9StjzPB8FxjkJIBv1YzN47SbKAUpFxnyzS7KWzha9nl/+bTbpHfBjp0Ghhi9MxXle0eYhu1LQN4d7Bfjb5WYV2Ii7Vji4Lx3Frcz4QCBSgZHX3l4lTmqrK9QgPc6Nlt04N0w0CFGsK3vHC2J0udWTq+FS0ek+I9RvQAy9nG44eqsh1gtvP+viNji+cnB295wWyX7UulsSVTE/gckgbuX0K2qAMdG76qbLeoiAe+JljdsLVatsuPgaT+ZEMc40R3GW9u5mU7mP+1qmy3s9magO3eKtmq+C7S1h2hUhWA4Tdyso0rflaVLeoRR0O2hpRtMvRXHFsln6MsfhuKSBcCg4HcbCP/81qxbUrZXiXYFjUGUowVpK4H1U82uCCN4igv2yjmslZsN0pnqxzjS2X7lpgwAEexX4otmGWWZFuEX0pDbD4NrRi2ruFpt1+JrbXzHs8eQwYJ2RYQK9CRU5PKVhjVY+t+KbawkuQK2OrJhUtn2xVHQbCU2JdiK1PIVnNsXlMOK1lCmUucM4Gm3X6zrc3Z6s2p0ZV7TlbrlEESpt1+s61F3meNbPXNGZHM0YyFXTa4AuA325p2tjrneknmVsfCy3jxyU3fbKMThWxVfAzgQvTO0fzIYCuYEK319LXYWrRmbFXeNn4dmudW07VMgNBt47K69a/E1rFpzdjqmMenvSZC5iLWktzdQF/pvfXTqx+pz78toJZJ5hLWOth+hlhBOlvVefOF1CBKC82HSmH7SWN88/itPA5ESCUUZxRVOywtfBsqhe3njs0vxHbZrJdAhdX8S73iQClsP2tOTZ24poz1clRqhxVWqzP1igOlsMUZb2ucC/eOc+GOiGvKYFuRheaR6MWrodLYOp8zh3Wen4wmKWZUea/gMiOZLsd0ti3aimueex7NK0BpUXDOiEFU5C0bJCFyLQqkNLZoUjL0R67ZnBH0hsbFPFAGL1zfrM4Yc9rvW9uT3evePKO3gnXPyTVkcrPF/UuPb1ivuV5CnzCaLoyWSfIQ28AD6di257psMPtbEeNTRdGlsfOyxRPOgbkEO1Z8jmad/nVYLhrlEsGJudH4TinXtBhlui5S2eIgkbSQ1CrmVoNDFmaLLyumiGpnwSjJG8FWpchuQUrNcsxki2aWw0UuEXReHgPvD0+mzHagwBYnDsXpB8ilCj8McLpFdK0VHARlok1lK3SZ+DABTbrmtUxwhg58FRZnixtJuELVwmzx8JY/olQhKfHu4psom2RCsurJOdnieQeAVZueuioUluDmai7OVphkCBYHrOViy/cXEnV5aQfUUQYHwMFR3H+uXEf5tyJb5GSflX0MhANEfC62YEU+awx3uPOxxcuV82QfXDtVWmOXf2TwJxkM01FnihdWRncRP7jaiqfqUmZkPoMtrgsX+9PR6AF+LvE0hdguuP5lTrbYmRRf2Rs+l7QuXFzX+kj4cf71QUfwlgWvaBc9UyrRgkKUGb3NYCtEgmqzzxmucg89OtgBZFnh/s1tXMw1J1shS888oB6TtHqOu2GTu48cF9hxjCfazinW4dVacQEXpfTzIpQZ4ctgK0RQnNph0zgSzAtXpRd4WP7ksLedWMcjH1sxLZ71e72+L+bKp9TYdVmn32+LJflhUTH0E5bfm25q9kxJH6OgQN3SykabwVZYiMLyg5WvMCi41Mq1aHrPd2dkYUXxfGw3hbe9ZlPnSq2N7di2OCcGJdcL/QOXeS7DdwAWojwpGyZWtjc5iy12qFNCq7JI68qzA2LMmM62ITuX+Qb83NJandKD4d31Pclu0Vmu+L5K9cP0K9srlck2fSGO6bOOF/dqWeRe3jZ8SPKxFdoDbu8d2H2XsHU69ME4AZuYx4iFViUpLMa+jOhFqxdja0zoNb0iG7bw3tfk3pbTgE1xTraShYmmHwrQTkrY+pu75JWIC3v1UuH66MGtlGsqz2ubydbopHy3LFNccNGlXtzg8RfKNedgS7cHAR3g8JWwnXbw2sSbm1j6ydiiyrnM5Q7wvhUa4uZwXORha1xJb9/2EytTUmvOsKCNA1P087KlWm/WxRtotkGOSLOWgGt5yaj7u/S7xLbEfVVWpNAq2YpeC7M1tumlvSyznVwm1eiLQJyZFwE03HnZJr+YFpsNprPYho6I5p7wUDqMWiS1T9+dzbqJXZWm4epUjrFtIM8Bk19ckq2xuZdca9I2bTrFaBctzWixnVlHurEE2ylc5PT0a/MhCe+yQbb8PuZrNk3geM0y94hHMbi7VmJRRstjg8SqjEZlmtxcje1UtRZQjWY7vf8tZgar/1rBlCjHdk02kCYG7gfrCQfGt2yXteLdXBZrwHc+Ykhidn/9nbmhY8lyPGbHHrABPyLOBql7/D68OcWjvhletmPDoxM67AgLN7t9yTLIL7rn9CyjtHJwy2mzu91p2Z7n7L33u5viiuVIB7sd2zR9Z7CrvnR5vTtwfNP0OpPl1ivf3N3utHe2dtOPbh5OBi3XDC46Y8H10kdC/7Jj8oUrlX6J50r9nRw/pH063mLKnLz3LRXd6lzndCE9v5Z9759fx6Ofq39774b6G9pvkWpc3A5/3K1gyPt49+Pm9qICrewX1NP4/P5yNPz4/XD361lDJPDx+e+/h98fN6PL0/Px2aq6Gt/Kp8bZy3g8vji/Pz29vb29fH0djYbDm5ubk1jT/wyHo9Ho9XK6w+np/fnF9IDjs++Xc9X6H3J+nN/2FawxAAAAAElFTkSuQmCC" alt="">
+        <input type="text" id="query" placeholder="Search">
+        <button onclick="getData()"><img src="https://www.pngall.com/wp-content/uploads/8/Search-PNG-Download-Image.png" alt=""></button>
+        <img id="mic" src="https://www.pngitem.com/pimgs/b/679-6796600_microfono-png-vector.png" alt="">
+        <img id="noti" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAZlBMVEX///8AAAC2trZOTk7m5uacnJxFRUWnp6eamppKSkolJSX4+Pj7+/vi4uLZ2dltbW0zMzPAwMDu7u6Ojo47Ozt8fHwqKiqHh4fJyckXFxcwMDBZWVm4uLhjY2NeXl6srKx1dXUQEBDGZAu/AAAEsklEQVR4nO2djVbiMBBGHUSBFhB/UdYVeP+X3O3pqqvSpmnyzTfhzH0B5p6kSWcSOhcXekxnN4tKqsXNbKr4q2rU8418spnX7IBys6/kK9WeHVJW6oX8ZHFGw7h6OSEo8rJiB5aL1Um/hjNRrHedhrvzmKiXnYIil+zgcnDbIyhyyw4vA5teww07vHQmvYIiE3aAyfwKGP5iB5jKXUBQ5I4dYiKvQcNXdoiJ3AcN79khJvIYNHxkh5jI76Dhb3aIiVwHDa/ZISbihm5oHzd0Q/ucKkF9ZcEOMYX69RAUFDm8FlrLWM/D4/cxjvM1O9xYplcPg/VaHq5KKvXfvkXqtbwVUrRZ7kfpteyX7PCD1LPvBxRxVDPjy87sKcmv4WnGluhh3V3djmFndWGtw/n8UB5NTtXJ6QOmcbwYLKMOeXuJ4cAW+sYqfYX5zpOpo7dQ6X4chmbqFiIosmWLvXMDEhS5Yau19J2ApmLhBLUOZ/EpXNN3xjo2S4rlga2IHcEGch0ndP6ZA+oZau4XmdMceILhw8E80I4Yw+e7uSCdE0/VBEU4Var+izJ5oVy7yZfvDoFwFt5/mSs/6pXGOq2kFk+l/W6DSpi6UU6l1uqCIroVOM119B3V9XRGEBRRLBWrLzMtiovNFUVQ5EpLsD6SDI9agzgnCYrMdQSXNEERneNFzkLaorOc5i/gD+dJQ/CZKCjyrGA47hZCLt7wgt1/09IBfyLF2ypa8BsGusYd4gEtyJ6k+GnKnqT4acrJKv6nwgryJyl6mqbcWcsF9m/u3O2+BbrpL/mP4d8HEZlgMEpsP0EW3ZiJ0yfIFAp3ryQG4B2UJaNM+pMN7kEM/6lXB9xfh20sNMilxsZCg1xq9A+cToM7hkLeYIsBd9vtyFb7xxFmyDb7ACVYs8U+QJ1fWNkscNuF9vWLblAXMyykvy2oJNjKho/b8vl1tndQ9TYrrzS4lxrdm2x9oG652ch/G1A5cPhbM1qgvmmjcW19GKjL7VZSC1xy4YZ6uKEbuiEfN3RDN+Tjhm7ohnzc0A3dkI8buqEb8nFDN3RDPm7ohm7Ixw3d0A35uKEbuiEfN3RDN+Tjhm7ohnzc0A3dkI8buqEb8nFDN+xieMdGNKDOnqwvz54C8jVaS4IQRVuCAEVrgtkV7QlmVrQomFXRpmBGRauC2RTtCmZStCyYRdG2YAZFO1+K6CLxCxLWR7AhaRTtj2BDwiiWMIINo0exFMHRiuUIjlQsSXCUYhmLzCfRy01ZI9gQOYqljWBD1CiWN4INEaNYpmCMIr7JL4bhrYPtFLfjGF4Kd0OruKEb2scN3dA+ww3P/53mdlIm6p2tHcdxHMdxyuduGgOuSRWOuD4DuAZHOOIOBpT6wmclrqMJtvUmhrgO5RodxXMT13YW324bQEzPUnCTXxAxLU1QTUewxDyIJT6GF1Ft2tihjmR4fyhkd1gky91AwR2yhzGUyUDDCTvQ8QwrLQ8v5NpjOshwyg4zhSE7RqE7xTvh9bTUdfSDUBJVYtr0jf7Ol2dxmLI+dvodka3uFam7ChpbVE9Yfe4OJ/wOJVafulndf00Xq/sic95+pvvtZXWUY3W53Stu8n8Ak5JzsGF4ohMAAAAASUVORK5CYII=" alt="">
+        <img id="user" src="https://lh3.googleusercontent.com/a-/AFdZucppKU3WqoZkv8MDCFR6HcfEKNgcxoBq0fS4YKSM=s360-p-no" alt="">
+
+    </div>
+<div id="box">
+    <div class="main"></div>
+    <div class="side"></div>
+</div>
+</body>
+</html>
+<script>
+    let { title, id, query } =JSON.parse(localStorage.getItem('video')) || []
+
+    let div=document.createElement('div')
+    let bag=document.createElement('div')
+    bag.setAttribute('class', 'container')
+    bag.innerHTML=`<iframe width="560" height="315" src="https://www.youtube.com/embed/${id}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+    let h2=document.createElement('h2')
+    h2.innerText= title.substring(0,90)
+    let img=document.createElement('img')
+    img.src = 'https://i.ibb.co/sw8Jmdb/image.png'
+    div.append(bag, h2, img)
+    document.querySelector('.main').append(div)
+
+    let API_Key="AIzaSyCHt4BTSfvIaE_tJhlaFAsMqQLPDvBC9-M";
+
+    let getData = async (query) => {
+    try {
+        let res = await fetch(`https://youtube.googleapis.com/youtube/v3/search?q=${query}&key=${API_Key}&part=snippet&maxResults=8`)
+        let { items } = await res.json()
+        console.log('items:', items)
+        loadVideos(items, query)
+    } catch (error) {
+
+    }
+}
+getData(query)
+function loadVideos(arr, query) {
+    arr.forEach(({ snippet: { title, thumbnails }, id: { videoId } }) => {
+        let div = document.createElement('div')
+        div.addEventListener('click', () => {
+            localStorage.setItem('video', JSON.stringify({ title, id: videoId , query: query }))
+            window.location.href = 'videoPAGE.html'
+        })
+        let div1 = document.createElement('div')
+        let h2 = document.createElement('h4')
+        let img = document.createElement('img')
+        img.src = thumbnails.medium.url
+        h2.innerHTML = title.substring(0, 50)
+        div1.append(h2)
+        div.append(img, div1)
+        document.querySelector('.side').append(div)
+    });
+}
+</script>
