@@ -1,5 +1,5 @@
 
-<h1 align="center" id="title">You Tube</h1>
+<h1 align="center" id="title">YouTube</h1>
 YouTube is a global online video sharing and social media platform. It is owned by Google, and is the second most visited website, after Google Search. YouTube has more than 2.5 billion monthly users who collectively watch more than one billion hours of videos each day.
 
 
@@ -18,29 +18,21 @@ Technologies used in the project:
 ## 💻 Screenshots
 
 **Home Page:**
-![Home Page](https://user-images.githubusercontent.com/49484642/214049412-b62130c6-f19b-449f-9b22-43a99cf41774.png)
+![Home Page](file:///C:/Users/PUNEET/Desktop/Homepage.png)
 
-**Login Page:**
-![Login Page](https://user-images.githubusercontent.com/49484642/214050878-7b2bace5-6f63-453c-ab5d-dd60919f8b3d.png)
 
-**Product Page:**
-![Product Page](https://user-images.githubusercontent.com/49484642/214049453-8e0930ea-957d-4ef7-88a2-de7682f5c3dc.png)
 
 **Single Product Page:**
 ![Single Product Page](https://user-images.githubusercontent.com/49484642/214049494-35508512-06f3-4bfb-bc2a-95ec473b74aa.png)
 
-**Cart Page:**
-![Cart Page](https://user-images.githubusercontent.com/49484642/214049471-3c26b539-e904-408c-8e3b-f6bb6dbc5a15.png)
 
-**Admin Page:**
-![Admin Page](https://user-images.githubusercontent.com/49484642/214050842-c2778582-cd95-41ce-97ce-c73ef281ffef.png)
 
 
 ## ✨ Features 
 
-- Live previews
+- Search functionality
 - Fullscreen mode
-- Cross platform
+- Single Video Mode
 
 
 ## 🚀 Demo
@@ -49,9 +41,6 @@ Technologies used in the project:
 
 https://shopqmart.vercel.app/
 
-**Back-end deployed URL:**
-
-https://splendid-bear-cap.cyclic.app/
 
 ##  📁 Folder structure
 #### `Frontend` - Holds the client application
