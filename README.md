@@ -18,12 +18,15 @@ Technologies used in the project:
 ## 💻 Screenshots
 
 **Home Page:**
-![Home Page](file:///C:/Users/PUNEET/Desktop/Homepage.png)
+![Home Page](![![Homepage](https://user-images.githubusercontent.com/103636380/214957935-ecc1acb7-9c26-46bd-98a1-a5d1cb0babf2.png)
+]))
 
 
 
 **Single Product Page:**
-![Single Product Page](https://user-images.githubusercontent.com/49484642/214049494-35508512-06f3-4bfb-bc2a-95ec473b74aa.png)
+![Single Product Page]([![Insides (1)](https://user-images.githubusercontent.com/103636380/214958194-da1f63c4-4b15-408a-a5a2-13f7d029057c.png)
+])
+)
 
 
 
