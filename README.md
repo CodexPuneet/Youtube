@@ -43,7 +43,7 @@ https://chimerical-unicorn-82dad6.netlify.app/
 
 Clone the project
 ```bash
-git clone https://github.com/SCjadhav21/Project_ShopQ_Mart.git
+git clone https://github.com/CodexPuneet/Youtube.git
 ```
 ## ✍Developer
 - [@CodexPuneet](https://www.github.com/CodexPuneet)
